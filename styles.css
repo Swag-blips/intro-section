@@ -6,7 +6,69 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg: #fafafa;
+  --text: #686868;
+}
 body {
   font-family: "Epilogue", sans-serif;
   font-optical-sizing: auto;
+  background-color: var(--bg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 40px;
+  margin-right: 40px;
+
+  p {
+    font-size: 14px;
+    line-height: 16%;
+    text-align: left;
+    color: var(--text);
+  }
+}
+
+.logo-container {
+  margin-top: 34px;
+}
+
+.nav-options {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-left: 62px;
+  gap: 40px;
+  margin-top: 20px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 21px;
+
+  button {
+    border: 2px solid var(--text);
+    color: var(--text);
+    font-family: inherit;
+    background-color: var(--bg);
+    font-size: 14px;
+    line-height: 16%;
+    cursor: pointer;
+    border-radius: 14px;
+    width: 104px;
+    height: 42px;
+  }
 }
