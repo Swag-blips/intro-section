@@ -90,6 +90,7 @@ main {
   h1 {
     font-size: 80px;
     line-height: 80%;
+    width: 540px;
     letter-spacing: -1.11px;
   }
   p {
@@ -131,5 +132,88 @@ main {
     width: 100%;
     height: 100%;
     object-fit: contain;
+  }
+}
+
+.menu {
+  display: none;
+}
+.hero-img-mb {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-right {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .hero-img {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  nav {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .hero-img-mb {
+    display: block;
+    margin-top: 24px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .main-content {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 48px;
+    gap: 0px;
+    width: 100%;
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      line-height: 42px;
+      letter-spacing: -0.5px;
+      width: 100%;
+    }
+    p {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 16px;
+      margin-left: 16px;
+      margin-right: 16px;
+      line-height: 26px;
+    }
+
+    button {
+      margin-top: 24px;
+      align-self: center;
+    }
+  }
+
+  .companies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 48px;
+
+    img {
+      width: 17%;
+    }
   }
 }
